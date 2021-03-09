@@ -7,10 +7,8 @@ import java.util.Scanner;
 public class LeitorApp {
 
 	public static void main(String[] args) {
-		File file = new File("\\inputTest.txt");
+		File file = new File("C:\\Users\\giuli\\Documents\\workspace\\NelioAlvesCurso\\src\\secao17\\inputTest.txt");
 		Scanner sc = null;
-		
-		
 		try {
 			
 			sc = new Scanner(file);
@@ -19,7 +17,7 @@ public class LeitorApp {
 			}
 			
 		} catch (IOException e) {
-			System.out.println("Error: " + e);
+			System.out.println("Error: " + e.getMessage());
 		} finally {
 			if(sc != null) {
 				sc.close();
